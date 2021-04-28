@@ -7,6 +7,6 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./var/docker/mongo/data:/data/db
+      - /var/docker/mongo/data:/data/db
     command: [--auth]
     restart: always
